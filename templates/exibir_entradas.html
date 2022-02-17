@@ -1,0 +1,12 @@
+{% extends 'layout.html'%}
+{% block corpo %}        
+<ul>
+            {% for post in posts %}
+            <li>
+                <h2>{{posts['titulo']}}</h2>
+                {{posts['texto']}}
+            </li>
+            {% endfor %} 
+            {% block corpo%}
+            {%endblock%}
+        </ul>
